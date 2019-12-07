@@ -44,7 +44,7 @@ const Notes = () => {
 const todoNotes: string[] = [
   "Redo API calls + add more functionality",
   "Update Pokemon UI + info",
-  "Refactor some code and components",
+  "Refactor some code and components (e.g., document titles)",
   "Test different viewports, mobile, browser versions",
   "Change widget? (flash now blocked by default)",
   "Add more pictures + collapsibles"
