@@ -7,6 +7,7 @@ yarn install
 yarn start
 ```
 
-## [Deploying to Github Pages](https://github.com/gitname/react-gh-pages)
+## [React gh-pages](https://github.com/gitname/react-gh-pages)
+## [Deployment](https://github.com/facebook/create-react-app/blob/master/docusaurus/docs/deployment.md)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
