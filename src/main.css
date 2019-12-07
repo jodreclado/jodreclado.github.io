@@ -1,4 +1,43 @@
-.active{
-  color: red;
+body {
+  background-color: #AECBC9;
+  background-image: url('./assets/background.png');
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page {
+  background-color: #ffffff;
+  box-shadow: 10px 10px 5px grey;
+  margin: 0px 20px 20px 20px;
+  padding: 10px 30px 30px 30px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+#nav-bar .active{
   font-weight: bold;
+  background-color: rgba(31, 172, 228, 0.788);
+}
+
+#nav-bar ul {
+  list-style-type: none;
+  margin: 20px 20px 0px 20px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  border-radius: 5px 5px 0px 0px;
+}
+
+#nav-bar li {
+  float: left;
+}
+
+#nav-bar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#nav-bar li a:hover:not(.active) {
+  background-color: rgb(112, 109, 109);
 }

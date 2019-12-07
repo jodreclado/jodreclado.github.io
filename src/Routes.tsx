@@ -1,14 +1,20 @@
+// https://reactjs.org/docs/code-splitting.html
 import { lazy } from 'react';
 
-const Home = lazy(() => import('./components/Home'));
-const Notes = lazy(() => import('./components/Notes'));
+import Home from './components/Home';
+import Projects from './components/Projects';
+import Notes from './components/Notes';
 
-export const NoMatch = lazy(() => import('./components/NoMatch'));
+const Async = lazy(() => import('./components/Async'));  // lazy load
+const Search = lazy(() => import('./components/Search'));
+const Recorder = lazy(() => import('./components/Recorder'));
+export { default as NoMatch } from './components/NoMatch';  // 404 route
 
+// names are used as stable keys
 interface RouteObj {
   name: string;
   path: string;
-  component: React.LazyExoticComponent<() => JSX.Element>;
+  component: (() => JSX.Element) | React.LazyExoticComponent<() => JSX.Element>;
 }
 
 export const routes: RouteObj[] = [
@@ -18,8 +24,28 @@ export const routes: RouteObj[] = [
     component: Home,
   },
   {
+    name: 'Projects',
+    path: '/projects',
+    component: Projects,
+  },
+  {
     name: 'Notes',
     path: '/notes',
     component: Notes,
+  },
+  {
+    name: 'Space',
+    path: '/space',
+    component: Async,
+  },
+  {
+    name: 'Pokemon',
+    path: '/pokedex',
+    component: Search,
+  },
+  {
+    name: 'Vocaroo',
+    path: '/voice',
+    component: Recorder,
   }
 ]

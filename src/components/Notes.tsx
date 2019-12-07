@@ -1,9 +1,11 @@
-import React, { FunctionComponent } from 'react';
+import React, { useEffect, FunctionComponent } from 'react';
+import { Link } from 'react-router-dom';
 
 interface IProps {
   list: string[];
 }
 
+// refactor later
 const Bullets: FunctionComponent<IProps> = ({ list }) => {
   return (
     <div>
@@ -17,9 +19,20 @@ const Bullets: FunctionComponent<IProps> = ({ list }) => {
 }
 
 const Notes = () => {
+  useEffect(() => {
+    document.title = "Notes";
+  }, []);
+
+  let junkPage = "/" + (+new Date()).toString(36).slice(-5);
+
   return (
-    <div>
+    <div className='page'>
       <h2>Notes</h2>
+      <h3>Tests</h3>
+      <ul>
+        <li><Link to={junkPage}>404</Link></li>
+        <li>Error boundary?</li>
+      </ul>
       <h3>TODO</h3>
       <Bullets list={todoNotes} />
       <h3>Console log</h3>
@@ -29,7 +42,12 @@ const Notes = () => {
 }
 
 const todoNotes: string[] = [
-  "test"
+  "Redo API calls + add more functionality",
+  "Update Pokemon UI + info",
+  "Refactor some code and components",
+  "Test different viewports, mobile, browser versions",
+  "Change widget? (flash now blocked by default)",
+  "Add more pictures + collapsibles"
 ]
 
 const consoleNotes: string[] = [

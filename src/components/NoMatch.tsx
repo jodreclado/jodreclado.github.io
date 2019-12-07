@@ -13,7 +13,7 @@ const NoMatch = () => {
     (seconds === 0) ? (
       <Redirect to="/" />
     ) : (
-      <div>
+      <div className='page'>
         <h2>404</h2>
         <p>page not found, returning to index in {seconds} second{seconds !== 1 ? "s" : ""}...</p>
       </div>
