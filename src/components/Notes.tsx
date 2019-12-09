@@ -47,7 +47,8 @@ const todoNotes: string[] = [
   "Refactor some code and components (e.g., document titles)",
   "Test different viewports, mobile, browser versions",
   "Change widget? (flash now blocked by default)",
-  "Add more pictures + collapsibles"
+  "Add more pictures + collapsibles",
+  "Other: HTTPS enforcement, gh-pages deployment, etc."
 ]
 
 const consoleNotes: string[] = [

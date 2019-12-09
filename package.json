@@ -5,9 +5,7 @@
   "private": true,
   "dependencies": {
     "@types/jest": "^24.0.15",
-    "@types/node": "^12.6.6",
-    "@types/react": "^16.8.23",
-    "@types/react-dom": "^16.8.4",
+    "@types/node": "^12.12.14",
     "@types/react-router-dom": "^4.3.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -39,6 +37,8 @@
     ]
   },
   "devDependencies": {
+    "@types/react": "^16.9.15",
+    "@types/react-dom": "^16.9.4",
     "gh-pages": "^2.1.1"
   }
 }
