@@ -49,7 +49,8 @@ const todoNotes: string[] = [
   "Change placeholder widget? (flash now blocked by default)",
   "Add more pictures + collapsibles",
   "Other: HTTPS enforcement, gh-pages deployment, Heroku/Firebase.",
-  "Adjust CSS for projects (modal images 3:2 ratio, didn't fix heights, test single/double/quad formats)"
+  "Adjust CSS for projects (modal images 3:2 ratio, didn't fix heights, test single/double/quad formats)",
+  "Uniform format and style for project descriptions"
 ]
 
 const consoleNotes: string[] = [
