@@ -35,20 +35,21 @@ const Notes = () => {
       </ul>
       <h3>TODO</h3>
       <Bullets list={todoNotes} />
-      <h3>Console log</h3>
+      <h3>Console log fixes</h3>
       <Bullets list={consoleNotes} />
     </div>
   );
 }
 
 const todoNotes: string[] = [
-  "Redo API calls + add more functionality",
+  "Redo API calls + add more functionality (clever, Youtube, Amazon)",
   "Update Pokemon UI + info",
-  "Refactor some code and components (e.g., document titles)",
+  "Refactor code and components (e.g., setting document titles, routes/lists)",
   "Test different viewports, mobile, browser versions",
-  "Change widget? (flash now blocked by default)",
+  "Change placeholder widget? (flash now blocked by default)",
   "Add more pictures + collapsibles",
-  "Other: HTTPS enforcement, gh-pages deployment, etc."
+  "Other: HTTPS enforcement, gh-pages deployment, Heroku/Firebase.",
+  "Adjust CSS for projects (modal images 3:2 ratio, didn't fix heights, test single/double/quad formats)"
 ]
 
 const consoleNotes: string[] = [
